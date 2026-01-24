@@ -39,14 +39,20 @@ Ensimmäisenä asensin unzip micron, komennolla sudo apt-get -y install wget unz
 Löysin admin salasanan, kun käytin inspector työkalua PIN koodin syöttökentässä ja poistin input type="number" kohdassa number ja syötin value"" kohtaan "'UNION SELECT password FROM pins-- "  
 <img width="643" height="81" alt="image" src="https://github.com/user-attachments/assets/c0f7c135-7932-4409-9f48-a6e9f309efcc" />  
 <img width="822" height="88" alt="image" src="https://github.com/user-attachments/assets/fd8e84d3-4960-4a8e-84c9-6153756d3003" />  
+<img width="1544" height="281" alt="image" src="https://github.com/user-attachments/assets/8219af2a-3c16-4e1c-9c02-dc3505d386c9" />  
+Sain tämän kohdan tehtyä, kun luin Portswiggerin SQL injection UNION attacks kohtaa.  
 
+## b) Fix the 010-staff-only vulnerability from source code  
+En osannut korjata haavoittuvuutta, joten katsoin apua Robin Niinemetsin tehtävästä. Sain korjattua haavoittuvuuden.  
+<img width="995" height="453" alt="image" src="https://github.com/user-attachments/assets/d153499b-a7a3-4c02-bc1c-eb6cf3626d83" />  
+<img width="1186" height="1132" alt="image" src="https://github.com/user-attachments/assets/8a510ed3-7b57-43f4-a1d3-44e7de966aec" />  
 
+## c) Solve dirfuzt-1  
 
-
-Remember systematic working methods and report as you go. Also reflect: Where could this vulnerability be common? How could this mistake be avoided? What did I learn from this?  
 
 ## Lähteet:  
 Karvinen tero. 2006. Raportin kirjoittaminen. https://terokarvinen.com/2006/raportin-kirjoittaminen-4/  
 Karvinen Tero. 2023. Find Hidden Web Directories - Fuzz URLs with ffuf. https://terokarvinen.com/2023/fuzz-urls-find-hidden-directories/  
 OWASP Top 10. Broken access control. 2021. https://owasp.org/Top10/2021/A01_2021-Broken_Access_Control/index.html  
-PortSwigger. Access control vulnerabilities and privilege escalation. https://portswigger.net/web-security/access-control
+PortSwigger. Access control vulnerabilities and privilege escalation. https://portswigger.net/web-security/access-control  
+PortSwigger. SQL injection UNION attacks. https://portswigger.net/web-security/sql-injection/union-attacks
