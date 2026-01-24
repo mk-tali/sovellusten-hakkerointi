@@ -1,7 +1,5 @@
-Remember systematic working methods and report as you go. Also reflect: Where could this vulnerability be common? How could this mistake be avoided? What did I learn from this?  
-
 # h2 break and unbreak  
-## Tiivistelmä  
+## Tiivistelmät    
 OWASP Top 10 Broken access control  
 -Yleisin heikkous  
 -Käyttäjäoikeuksien hallinta toteuttaa käytäntöjä niin, että käyttäjät ei pysty toimimaan heille määriteltyjen oikeuksien ulkopuolella.  
@@ -33,6 +31,12 @@ Raportin kirjoittaminen
 -Vakiotekstit.
 -Ei saa sepittää eikä plagioida.
 (Karvinen T. 2006)  
+
+## a) Break into 010-staff-only  
+
+
+
+Remember systematic working methods and report as you go. Also reflect: Where could this vulnerability be common? How could this mistake be avoided? What did I learn from this?  
 
 ## Lähteet:  
 Karvinen tero. 2006. Raportin kirjoittaminen. https://terokarvinen.com/2006/raportin-kirjoittaminen-4/  
