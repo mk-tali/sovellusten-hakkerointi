@@ -33,6 +33,13 @@ Raportin kirjoittaminen
 (Karvinen T. 2006)  
 
 ## a) Break into 010-staff-only  
+Environment: Debian13 Virtuaalikone, joka pyörii Windows 11 koneella. Browser Firefox.   
+Ensimmäisenä asensin unzip micron, komennolla sudo apt-get -y install wget unzip micro. Tämän jälkeen latasin https://terokarvinen.com/hack-n-fix/teros-challenges.zip wget komenolla, ja purin unzip komenolla. siirryin cd komenolla challenges/010-staff-only/ hakemistoon ja ajoin python3 staff-only.py komennon. Sitten asensin python3-flask python3-flask-sqlalchemy. python3 staff-only.py komennon jälkeen sain oikean ilmoituksen  
+<img width="1599" height="252" alt="image" src="https://github.com/user-attachments/assets/ed87975d-9f41-40a7-8462-860237bb8728" />  
+Löysin admin salasanan, kun käytin inspector työkalua PIN koodin syöttökentässä ja poistin input type="number" kohdassa number ja syötin value"" kohtaan 
+<img width="643" height="81" alt="image" src="https://github.com/user-attachments/assets/c0f7c135-7932-4409-9f48-a6e9f309efcc" />  
+<img width="822" height="88" alt="image" src="https://github.com/user-attachments/assets/fd8e84d3-4960-4a8e-84c9-6153756d3003" />  
+
 
 
 
