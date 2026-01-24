@@ -48,6 +48,11 @@ En osannut korjata haavoittuvuutta, joten katsoin apua Robin Niinemetsin tehtäv
 <img width="1186" height="1132" alt="image" src="https://github.com/user-attachments/assets/8a510ed3-7b57-43f4-a1d3-44e7de966aec" />  
 
 ## c) Solve dirfuzt-1  
+Latasin dirfuzt-1. Avasin sen ja se sanoo dirfutz-1 - Nothing, nil, null, nada. Asensins fuffin. Latasin Dictionary of Common Web Paths. Katkasin nettiyhteyden Virtualboxin host-only network adapterilla. Ajoin ffuf -w common.txt -u http://127.0.0.2:8000/FUZZ  
+Jostain syystä, kun yritän ajaa ffufia, se antaa vain erroria  
+<img width="1501" height="731" alt="image" src="https://github.com/user-attachments/assets/08615755-e98c-4439-8ad0-947ba2246aa6" />  
+Vaikka lopetin dirfuzt-0 
+
 
 
 ## Lähteet:  
