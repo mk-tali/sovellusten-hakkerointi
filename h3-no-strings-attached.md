@@ -7,7 +7,7 @@ Tämän jälkeen kokeilin komentoa ``strings passtr`` ja löysin tämän kohdan.
 Ajoin uudestaan `./passtr` komennon ja kokeilin salasanaksi "sala-hakkeri-321".  
 <img width="1123" height="127" alt="image" src="https://github.com/user-attachments/assets/6c1d80ac-cfc5-46db-add2-45a34786bad0" />  
 
-## b) New version of passtr.c 15:00  
+## b) New version of passtr.c 1,5h  
 Aloitin tutkimalla miten obfuscoida C koodia. Löysin digital.ai sivulta ohjeet ja linkin githubiin, josta voi asennettua obfuscatorin. (https://digital.ai/catalyst-blog/how-to-obfuscate-c-code/) (https://github.com/obfuscator-llvm/obfuscator?_ga=2.71821587.1866848522.1769697216-782570487.1769697216)  
 Asensin obfuscatorin `git clone -b llvm-4.0 https://github.com/obfuscator-llvm/obfuscator.git`. JAtkoin asennusta ohjeiden mukaan <img width="607" height="129" alt="image" src="https://github.com/user-attachments/assets/3374b880-d86e-4401-9c0d-e822c768be37" />  
 cmake komennon kanssa tuli ongelma, joten kysyin apua ChatGPT_ltä ja se sanoi, että minun ei tarvitse tehdä mitään tästä. Loin uuden tiedoston komennolla `nano passtr_obf.c`. Tänne tiedostoon kirjoitin seuraavan koodin.  
