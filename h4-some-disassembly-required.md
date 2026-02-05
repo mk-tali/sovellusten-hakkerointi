@@ -17,9 +17,11 @@ Ei näyttänyt olevan mitään hyödyllistä. Seuraavaksi kävin funktioita läp
 <img width="599" height="496" alt="image" src="https://github.com/user-attachments/assets/2f82cb3a-b180-482d-8d9b-c729461c7a44" />  
 Tämä näytti siltä, että voisi olla pääohjelma. Aloin tutkimaan tätä funktiota tarkemmin. Sen sain ainakin selvitettyä, että var on käyttäjän syöte, joten nimesin sen "user_input". käyttäjän syötettä verrataan FUN_001053a7(0x1063a7). Jos vertailu on totta, ohjelma palauttaa 0. Muussa tapauksessa ohjelma palauttaa FUN_001053a7(0x1063ed).  
 
-## c) If backwards 17:15  
+## c) If backwards 3h  
 Avasin Ghidralla passtr tiedoston. Etsin kohdan, jossa on main funktio.  
 <img width="992" height="446" alt="image" src="https://github.com/user-attachments/assets/f1dcf937-e71f-4b76-aeea-678d6991174a" />  
-En vittu osaa
+
+## d) Nora CrackMe  
+
 
 
