@@ -6,11 +6,12 @@ Ghidra for Reverse Engineering (PicoCTF 2022 #42 'bbbloat')
 -Avataan bbbbloat Ghidrassa  
 -Etsitään strings  
 -if funktiosta löytyi hexadesimaali luku, joka oli oikea vastaus, kun sen muutti normaaliksi luvuksi  
+(John Hammond. 2022.)
 
 ## a) Install Ghidra  
 Asensin openjdk:n ja Ghidran Debian 13 koneelle komennoilla `sudo apt install openjdk-21-jdk` `wget https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_11.1.2_build/ghidra_11.1.2_PUBLIC_20240709.zip` ja purin sen komennolla `unzip ghidra_11.1.2_PUBLIC_20240709.zip`  
 
-## b) rever-C  14:30
+## b) rever-C 14:30  
 Avasin Ghidran ja loin uuden projektin, jossa avasin packd tiedoston. Katsoin ensin Window kohdasta defined strings ja löysin kohdan "What's the password?" Klikkasin siitä ja katson mitä se näytti.  
 <img width="1758" height="965" alt="image" src="https://github.com/user-attachments/assets/bd54b769-d8ed-46a5-bd13-f92b18b34ecd" />  
 Ei näyttänyt olevan mitään hyödyllistä. Seuraavaksi kävin funktioita läpi kunnes löysin  
@@ -24,7 +25,7 @@ Avasin Ghidralla passtr tiedoston. Etsin kohdan, jossa on main funktio.
 ## d) Nora CrackMe Compile to binaries  
 Luin README.md tiedoston ja kloonasin git repon debian koneelleni `git clone https://github.com/NoraCodes/crackmes.git`. Siirryin crackmes hakemistoon `cd crackmes`. Sitten ajoin komennon `make`.  
 
-## e) Nora crackme01  
+## e) Nora crackme01 n. 15min  
 Aloitin ajamalla ohjelman komennolla `./crackme01.64` ja katsoin, mitä ohjelma tekee.  
 <img width="457" height="65" alt="image" src="https://github.com/user-attachments/assets/ad685352-b092-471a-b188-1f8925e173c3" />  
 Koska ohjelma pyytää yhtä argumenttia, kokeilin seuraavaa.  
@@ -34,7 +35,7 @@ Näistä sain käsityksen, miten ohjelma toimii, mutta ei auttanut minua ratkais
 Kokeilin syöttää "password1" aikaisemman "test" tilalle ja sain ratkottua tehtävän.  
 <img width="559" height="66" alt="image" src="https://github.com/user-attachments/assets/38e7c7f5-8081-4903-8e5e-3eee8b7b4af7" />  
 
-## e) Nora crackme01e  
+## e) Nora crackme01e n. 15min  
 Kokeilin nyt suoraan komentoa `strings crackme01e.64` ja löysin kohdan  
 <img width="310" height="83" alt="image" src="https://github.com/user-attachments/assets/0795b9ad-c09b-4dbf-a5c2-fc994f4b0987" />  
 Yritin komentoa `./crackme01e.64 slm!paas.k`, mutta nyt sain virheilmoituksen  
@@ -42,7 +43,7 @@ Yritin komentoa `./crackme01e.64 slm!paas.k`, mutta nyt sain virheilmoituksen
 Kokeilin laittaa salasanan heittomerkkeihin ja se toimi.  
 <img width="578" height="41" alt="image" src="https://github.com/user-attachments/assets/db9670ce-aa63-49b5-82f4-98b6cefa6d7d" />  
 
-## f) Nora crackme02  
+## f) Nora crackme02 n. 30min  
 Loin uuden projektin Ghidrassa ja avasin siellä tiedoston crackme02.64. Tässä on main funktio ennen muutoksia. Tutkin sitä, ja mietin mitä mikäkin kohta tekee.  
 <img width="460" height="537" alt="image" src="https://github.com/user-attachments/assets/b68fc470-ce71-4abf-af3c-65b3571d76d9" />  
 Ensimmäinen if -lauseke tarkistaa argumenttien määrän. Jos argumenttejä ei ole tasan 1, ohjelma hyppää loppuun `else` kohtaan. do -lauseke tarkistaa käyttäjän syötteen. Toinen if -lauseke vertaa käyttäjän syötettä do -lausekkeessa olevaan salasanaan. Jos salasanat eivät ole samat, ohjelma tulostaa ensimmäisen printf -lausekkeen `printf("No, %s is not correct.\n");` ja lopettaa ohjelman. Jos salasanat ovat samat ohjelma palauttaa `printf("Yes, %s is correct!\n");` Ohjelma vertaa käyttäjän syötettä `user_input1 = "password1"[lVar1 + 1];`. Salasana on siis "o`rrvnqc0", koska binäärissä tallennettu salasana oli "password1", mutta se muutettiin -1 ASCII. 
