@@ -45,9 +45,9 @@ Kokeilin laittaa salasanan heittomerkkeihin ja se toimi.
 ## f) Nora crackme02  
 Loin uuden projektin Ghidrassa ja avasin siellä tiedoston crackme02.64. Tässä on main funktio ennen muutoksia. Tutkin sitä, ja mietin mitä mikäkin kohta tekee.  
 <img width="460" height="537" alt="image" src="https://github.com/user-attachments/assets/b68fc470-ce71-4abf-af3c-65b3571d76d9" />  
-
-
-
+Ensimmäinen if -lauseke tarkistaa argumenttien määrän. Jos argumenttejä ei ole tasan 1, ohjelma hyppää loppuun `else` kohtaan. do -lauseke tarkistaa käyttäjän syötteen. Toinen if -lauseke vertaa käyttäjän syötettä do -lausekkeessa olevaan salasanaan. Jos salasanat eivät ole samat, ohjelma tulostaa ensimmäisen printf -lausekkeen `printf("No, %s is not correct.\n");` ja lopettaa ohjelman. Jos salasanat ovat samat ohjelma palauttaa `printf("Yes, %s is correct!\n");` Ohjelma vertaa käyttäjän syötettä `user_input1 = "password1"[lVar1 + 1];`. Salasana on siis "o`rrvnqc0", koska binäärissä tallennettu salasana oli "password1", mutta se muutettiin -1 ASCII. 
+<img width="550" height="60" alt="image" src="https://github.com/user-attachments/assets/48ea4ea8-be31-4687-b783-719685d8f4ec" />  
+<img width="464" height="539" alt="image" src="https://github.com/user-attachments/assets/443e8479-50db-4e16-888b-ba3deacc7183" />  
 
 
 ## Lähteet:
