@@ -29,6 +29,7 @@ että `JNZ` tilalle laitoin `JZ`. Tässä `JNZ` tarkoittaa Jump if Not Zero ja `
 <img width="645" height="338" alt="image" src="https://github.com/user-attachments/assets/c0abcb71-b4a8-480d-9834-a35ddf1f7123" />  
 Exporttasin muokatun tiedoston, annoin itselleni oikeudet ajaa sen ja testasin.  
 <img width="710" height="173" alt="image" src="https://github.com/user-attachments/assets/16d0a686-8ed4-4329-9366-8fabb61bd976" />  
+Toimii!
 
 ## d) Nora CrackMe Compile to binaries  
 Luin README.md tiedoston ja kloonasin git repon debian koneelleni `git clone https://github.com/NoraCodes/crackmes.git`. Siirryin crackmes hakemistoon `cd crackmes`. Sitten ajoin komennon `make`.  
