@@ -23,6 +23,8 @@ Avasin passtr tiedoston gnu debuggerilla. Kun annoin kaksi kertaa komennon list,
 <img width="1074" height="390" alt="image" src="https://github.com/user-attachments/assets/709c73a4-b2c8-4b66-8375-f0ad4fa2a865" />  
 Tämän jälkeen avasin passtr2o tiedoston gnu debuggerilla. Tällä kertaa list komento ei toiminut, vaan ohjelma tulosti `No symbol table is loaded.  Use the "file" command.` Annoin komennon `info files` ja sain tulokseksi  
 <img width="769" height="593" alt="image" src="https://github.com/user-attachments/assets/eff812e7-1ee0-4815-a9f9-b669e9b4028f" />  
+Tässä kohtaa en enää tiennyt mitä tehdä ja kysyin ChatGPT:ltä apua.  
+
 Annoin komennon `run` ja ohjelma kysyi salasanaa, mutta ilman oikeaa salasanaa ohjelma palauttaa saman kuin aiemmin, "Sorry, no bonus." Asetin breakpointit kohtoon puts ja printf. Ajoin ohjelman ja annoin väärän salasanan. Ohjelma hyppäsi breakpoint 2:een. Kirjoitin `x/s $rdi` ja ohjelma palautti "Sorry, no bonus.\n". Annoin komennon backtrace, jotta näen missä kohtaa salasanan tarkistus tapahtuu.  
 <img width="732" height="57" alt="image" src="https://github.com/user-attachments/assets/65ea5d88-818a-4a3b-805b-fa3ebd6992ee" />  
 Menin frame 1:een ja annoin komennon `x/60i $rip-120`.  
