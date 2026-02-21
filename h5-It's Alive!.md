@@ -29,7 +29,7 @@ Annoin komennon `run` ja ohjelma kysyi salasanaa, mutta ilman oikeaa salasanaa o
 <img width="732" height="57" alt="image" src="https://github.com/user-attachments/assets/65ea5d88-818a-4a3b-805b-fa3ebd6992ee" />  
 Menin frame 1:een ja annoin komennon `x/60i $rip-120`.  
 <img width="903" height="1098" alt="image" src="https://github.com/user-attachments/assets/a3871dc2-459b-45f9-9319-0dd2b67a489e" />  
-Tässä kohtaa menin ihan sekaisin.
+Tässä kohtaa oma ymmärrys loppui.
 
 
 
