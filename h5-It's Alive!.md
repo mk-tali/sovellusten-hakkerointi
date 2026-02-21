@@ -39,6 +39,3 @@ Tämän jälkeen ajoin komennot `x/s $rdi` `x/s $rsi`.
 <img width="221" height="98" alt="image" src="https://github.com/user-attachments/assets/d8f2fed2-1965-420d-80c2-fbbc9f5c84f4" />  
 Ensimmäinen kohta näyttää mihin ohjelma vertaa käyttäjän syötettä (secret) ja toinen kohta on käyttäjän syöte. Ohjelma muuttaa secretin ensimmäisen merkin -3 ja loput +4, joten salasanaksi saadaan `dgOMm-x1`.  
 <img width="556" height="93" alt="image" src="https://github.com/user-attachments/assets/6b0a2a4b-c22e-496b-bab3-22420c6903e8" />
-
-## Lähteet  
-
