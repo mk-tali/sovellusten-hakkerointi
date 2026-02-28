@@ -18,7 +18,33 @@ Makefileä piti muokata laittamalla -std=gnu89 CFLAGS kohtaan.
 <img width="670" height="631" alt="image" src="https://github.com/user-attachments/assets/d6ea0abf-5234-4252-a81d-01a2c3ee455d" />  
 
 ## 2) Analyse the image file  
+Aloin analysoimaan tiedostoa ajamlla komennon `binwalk Tapo_C200v3_en_1.4.2.bin.dec`  
+<img width="1836" height="252" alt="image" src="https://github.com/user-attachments/assets/db522fdd-9c66-4d1c-acdd-ec6a4b4bf328" />  
+<img width="1804" height="82" alt="image" src="https://github.com/user-attachments/assets/389f2995-5bbb-455b-8de9-c47175934f6c" />  
 
+## 3) extract rootfs from the dump file  
+Ajoin komennon `binwalk dump-tapo-c200v3-1.4.2.bin` ja extractasin `binwalk -e dump-tapo-c200v3-1.4.2.bin`. Siirryin extracted kansioon ja sieltä squashfs-root kansioon. 
+
+## 4) extract rootfs from the image file  
+Extractasin tiedoston komennolla `binwalk -e Tapo_C200v3_en_1.4.2.bin.dec`. Siirryin tämän yhteydessä luotuun hakemistoon `cd _Tapo_C200v3_en_1.4.2.bin.dec-0.extracted` ja siellä `cd squashfs-root`.  
+
+## 5) search available applications  
+Katsoin molemmissa dump ja image fileissa mitä ne sisältävät.  
+Dump file.  
+<img width="1300" height="1067" alt="image" src="https://github.com/user-attachments/assets/3e6dead9-84ea-4e12-995a-03ac9e6d4b49" />  
+<img width="1333" height="364" alt="image" src="https://github.com/user-attachments/assets/678bad3b-0040-4151-93de-c4af5d3903a4" />   
+Image file.
+<img width="1445" height="573" alt="image" src="https://github.com/user-attachments/assets/a459a9fb-c1a2-4766-855c-d1708c220a4d" />  
+
+## 6) analyse and try to open root password  
+
+Ajoin `ls` ja `file` komentoja ja käytin apuna ChatGPT 5.2 analysoimaan tulostuksia, löytääkseni jotain mistä olisi hyötyä. Näillä en löytänyt mitään, joten ChatGPT ehdotti komentoja `grep -Ri password .` `grep -Ri root .` `grep -Ri login .` `grep -Ri auth .` Nyt löysin seuraavan kohdan, joka näytti mielenkiintoiselta.  
+<img width="523" height="59" alt="image" src="https://github.com/user-attachments/assets/4119870f-dba0-40e1-bb49-270addc49e95" />  
+<img width="444" height="23" alt="image" src="https://github.com/user-attachments/assets/16b98148-e6d0-4091-bd05-825db16a914a" />  
+Tämän jälkeen ajoin komennon `strings bin/main | grep -Ei "pass|admin|root|login"`, josta löytyi hyvin paljon tietoa kirjautumiseen liittyen.  
+<img width="1391" height="553" alt="image" src="https://github.com/user-attachments/assets/4484c30d-dac9-4487-9fa3-f5c52be4757f" />  
+Tästä en enää ollut varma miten jatkaa ja saada root salasana.
 
 ## Lähteet  
-robbins/tp-link-decrypt. https://github.com/robbins/tp-link-decrypt
+robbins/tp-link-decrypt. https://github.com/robbins/tp-link-decrypt  
+QKaiser. 2025. Rooting the TP-Link Tapo C200 Rev.5. https://quentinkaiser.be/security/2025/07/25/rooting-tapo-c200/
