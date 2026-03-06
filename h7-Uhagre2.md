@@ -46,7 +46,9 @@ Ajoin koodin ja sain oikean tuloksen.
 ## c) 3. Single-byte XOR cipher  
 Kirjoitin seuraavanlaisen koodin.  
 <img width="886" height="660" alt="image" src="https://github.com/user-attachments/assets/9a38019b-a3f0-4d2d-be7c-2dc9fcb1d6af" />  
-Ohjelma decodaa hexin, kokeilee kaikkia 256 single-byte hex, pisteyttää tulokset sen perusteella, kuinka paljon ne vastaavat englannin kieltä, järjestää ne parhaimman ensiksi ja tulostaa viisi eniten pistettä saanutta vaihtoehtoa.
+Ohjelma decodaa hexin, kokeilee kaikkia 256 single-byte hex, pisteyttää tulokset sen perusteella, kuinka paljon ne vastaavat englannin kieltä, järjestää ne parhaimman ensiksi ja tulostaa viisi eniten pistettä saanutta vaihtoehtoa.  
+<img width="409" height="396" alt="image" src="https://github.com/user-attachments/assets/8e249055-eb51-47c9-bdfc-25f433af0320" />  
+Näistä ylin vaihtoehto oli oikea ratkaisu.
 
 ## Lähteet  
 Karvinen. 2024. Python Basics for Hackers. https://terokarvinen.com/python-for-hackers/ 
