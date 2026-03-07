@@ -35,6 +35,7 @@ Python basics for hackers.
 ## a) 1. Convert hex to base64  
 Muutin hex stringin base64 komennolla `echo "hex" | xxd -r -p | base64` ja sain oikean tuloksen.  
 <img width="1438" height="66" alt="image" src="https://github.com/user-attachments/assets/84343791-a5ad-4dd9-b21d-f07602806f9e" />  
+(cryptopals. Challenge 1)  
 
 ## b) 2. Fixed XOR  
 Kirjoitin seuraavanlaisen koodin pätkän.  
@@ -42,15 +43,35 @@ Kirjoitin seuraavanlaisen koodin pätkän.
 Alussa importtasin funktiot. Määritin hex1 ja -2 annetuilla stringeillä. Muutetaan hex -> bytes. Luodaan result buffer. Looppi enumeratella.  
 Ajoin koodin ja sain oikean tuloksen.  
 <img width="414" height="63" alt="image" src="https://github.com/user-attachments/assets/8d207d49-fe5e-4597-a631-c2f6a7d6dee2" />  
+(cryptopals. Challenge 2)  
 
 ## c) 3. Single-byte XOR cipher  
 Kirjoitin seuraavanlaisen koodin.  
 <img width="886" height="660" alt="image" src="https://github.com/user-attachments/assets/9a38019b-a3f0-4d2d-be7c-2dc9fcb1d6af" />  
 Ohjelma decodaa hexin, kokeilee kaikkia 256 single-byte hex, pisteyttää tulokset sen perusteella, kuinka paljon ne vastaavat englannin kieltä, järjestää ne parhaimman ensiksi ja tulostaa viisi eniten pistettä saanutta vaihtoehtoa.  
 <img width="409" height="396" alt="image" src="https://github.com/user-attachments/assets/8e249055-eb51-47c9-bdfc-25f433af0320" />  
-Näistä ylin vaihtoehto oli oikea ratkaisu.
+Näistä ylin vaihtoehto oli oikea ratkaisu.  
+(cryptopals. Challenge 3)  
 
+## d) 4. Detect single-character XOR  
+Latasin cryptopalsin sivulta tiedoston 4.txt, jossa oli annettu kaikki stringit. Varmistin, että se on samssa kansiossa kuin koodini.
+<img width="800" height="940" alt="image" src="https://github.com/user-attachments/assets/dd314b7d-3329-4b7b-b1fb-20fc1fa76d9e" />  
+Tässä oli sama perusidea kuin kolmosessa, että kokeillaan kaikkia avaimia hexaan. Nyt piti vain saada koodi tekemään se kaikille hexa riveille. `with open` kohta käy tiedoston läpi ja muuntaa kaikki hexat.
+Ajoin koodin ja sain tulokseksi.  
+<img width="764" height="176" alt="image" src="https://github.com/user-attachments/assets/c5fd80ae-350c-425d-96da-ddac23d93de5" />  
+(cryptopals. Challenge 4)  
+
+## e) 5. Implement repeating-key XOR  
+Seuraavalla koodilla.  
+<img width="605" height="396" alt="image" src="https://github.com/user-attachments/assets/bd5ad165-0466-47e8-b057-85f92735167d" />  
+Jossa käytettiin key "ICE" salaamaan plaintext.
+Sain seuraavan tuloksen, joka oli sama kuin cryptopalsin sivuilla.  
+<img width="1495" height="58" alt="image" src="https://github.com/user-attachments/assets/399daffe-8e21-4a76-99b0-513db7ab94b1" />
+(cryptopals. Challenge 5)  
+
+Käytin tehtävissä apuna ChatGPT 5.4 Thinking mallia.  
 ## Lähteet  
+cryptopals. Crypto Challenge Set 1. Challenges 1-5. https://cryptopals.com/sets/1
 Karvinen. 2024. Python Basics for Hackers. https://terokarvinen.com/python-for-hackers/ 
 Schneier 2015: Applied Cryptography, 20ed: Chapter 1: Foundations. https://learning.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/08_chap01.html#chap01-sec001 
 
