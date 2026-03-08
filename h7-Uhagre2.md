@@ -71,7 +71,7 @@ Sain seuraavan tuloksen, joka oli sama kuin cryptopalsin sivuilla.
 
 Käytin tehtävissä apuna ChatGPT 5.4 Thinking mallia.  
 ## Lähteet  
-cryptopals. Crypto Challenge Set 1. Challenges 1-5. https://cryptopals.com/sets/1
-Karvinen. 2024. Python Basics for Hackers. https://terokarvinen.com/python-for-hackers/ 
+cryptopals. Crypto Challenge Set 1. Challenges 1-5. https://cryptopals.com/sets/1  
+Karvinen. 2024. Python Basics for Hackers. https://terokarvinen.com/python-for-hackers/  
 Schneier 2015: Applied Cryptography, 20ed: Chapter 1: Foundations. https://learning.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/08_chap01.html#chap01-sec001 
 
